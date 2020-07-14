@@ -6,7 +6,6 @@
 	<title>Sydny Official</title>
 	<link rel="icon" type="image/png" href="images/sydny-favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/sydny.css">
-	<link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </head>
 
@@ -152,33 +151,15 @@
 			<p> &copy; 2019 Sydny | Site by BettaWeb </p>
 		</footer>
 	</div>
-
 	<div class="form-container" id="myForm">
-
-		<h2 class="register">
-				<strong>REGISTER</strong>
-		</h2>
-
 		<div id="form-div">
-
-			<form id="form">
-				<label> First Name </label><br>
-				<input type="text" name="fname"><br>
-
-				<label> Last Name </label><br>
-				<input type="text" name="lname"><br>
-
-
-				<label> Email Address </label><br>
-				<input type="email" name="email"><br> <br>
-
-
-				<button type="submit">Submit</button>
-				<button type="submit" class="close" onclick="closeForm">Close</btton>
+			<form id="form-container">
+				<input type="email" name="email" placeholder="enter email..."><br>
+				<input type="submit" value="Submit">
+				<input type="submit" value="Close" class="close" onclick="closeForm">
 			</form>
 		</div>
 	</div>
-	
 	<script>
 
 			window.onscroll = function() {myFunction()};

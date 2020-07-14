@@ -9,6 +9,16 @@ html, body {
 
 }
 
+@@font-face {
+	font-family: "";
+	src: url("css/fonts/GochiHand-Regular.eot");
+	src:
+	url("css/fonts/GochiHand-Regular.woff")format("woff"),
+	url("css/fonts/GochiHand-Regular.otf")format("opentype"),
+	url("css/fonts/GochiHand-Regular.svg")format("svg"),
+	url("css/fonts/GochiHand-Regular.ttf")format("ttf");
+}
+
 .clearfix:after {
 	content: ".";
 	visibility: hidden;
@@ -88,7 +98,7 @@ h1 {
  }
 
 #heading {
-	font-family: 'Carter One', cursive;
+	font-family: 'GochiHand-Regular';
 	font-size: 60px;
 	color: #ffd700;
 }
@@ -125,16 +135,8 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-  /*  position: static;
-    position: -webkit-sticky;
-  	position: sticky;
-  	top: 0; */
+
   }
-
-	.container {
-		width: 100%;
-	}
-
   #update-div {
   	order: 1;
   	position: static;
@@ -142,6 +144,9 @@ h1 {
 
   }
 
+	#update-div input[type=submit] {
+
+	}
   .heading-div {
   	order: -1;
   	position: static;
@@ -228,7 +233,6 @@ live div
 gallery div
 -----------------------*/
 .gallery-div {
-	/* border-bottom: 1px solid #555; */
 	margin-top: 10px;
 	padding-bottom: 40px;
 }
@@ -261,7 +265,6 @@ gallery div
 }
 
 @media only screen and (max-width: 500px) {
-
   #gallery .box {
     width: 100%;
   }
@@ -270,39 +273,6 @@ gallery div
 subscribe div
 
 
-#subscribe {
-	margin-top: 40px;
-	overflow: hidden;
-}
-#subscribe .subscribe-div {
-	background-color: black;
-	color: white;
-}
-
-#subscribe-h1 {
-}
-#subscribe form {
-	float: right;
-	width: 40%;
-	margin-top: 20px;
-}
-
-#subscribe input[type="email"]{
-  padding: 4px;
-  height: 25px;
-  width: 250px;
-}
-#subscribe-p {
-	width: 50%;
-	float: left;
-}
------------------------*/
-footer {
-	background-color: #090909;
-	padding: 20px;
-	text-align: center;
-	clear: both;
-	font-size: 11px;
 
 }
 /*----------------------
@@ -312,14 +282,13 @@ form div
 	display: none;
 	position: absolute;
 	top: 0;
-	height: 80%;
-	width: 80%;
+	height: 100%;
+	width: 100%;
 	background-color: #e5e5e5;
 	padding: 20px;
-	margin: auto;
 
 }
-.form-container input[type=text], .form-container input[type=email] {
+.form-container input[type=text] {
 		background-color: white;
 		float: center;
 		margin-bottom: 10px;
@@ -346,5 +315,4 @@ form div
 	justify-content: center;
 	align-items: center;
 	margin-top: 100px;
-	border: solid;
 }
