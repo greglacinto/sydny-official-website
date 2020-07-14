@@ -1,0 +1,350 @@
+/* general style */
+html, body {
+	margin: 0;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+
+}
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+    clear: both;
+}
+body {
+  font-family: Comic Sans MS, cursive;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+ul {
+	padding-top: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a:hover {
+
+}
+
+button {
+	color: black;
+	background: #ffd700;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 38px;
+	border: none;
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.dark {
+	background-color: black;
+	color: white;
+}
+
+/*----------------------
+heading div
+-----------------------*/
+
+#top-div {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 0;
+}
+#update-div {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+}
+#update-div input[type=submit] {
+	margin-top: 10px;
+	color: white;
+	background-color: black;
+	border: none;
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+header {
+}
+.box img {
+	float: left;
+	height: 30px;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+h1 {
+	 margin-top: 0;
+	 margin-bottom: 0;
+ }
+
+#heading {
+	font-family: 'Carter One', cursive;
+	font-size: 60px;
+	color: #ffd700;
+}
+.heading-div {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	left: 50px;
+}
+#boxes {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	top: 25px;
+	right: 40px;
+}
+#boxes .box {
+	float: left;
+}
+.sticky {
+	position: fixed;
+  	top: 0;
+  	width: 100%;
+	background-color: black;
+}
+.sticky + .content {
+ padding-top: 102px;
+}
+
+@media only screen and (max-width: 780px) {
+  #top-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  /*  position: static;
+    position: -webkit-sticky;
+  	position: sticky;
+  	top: 0; */
+  }
+
+	.container {
+		width: 100%;
+	}
+
+  #update-div {
+  	order: 1;
+  	position: static;
+		margin-top: 3px;
+
+  }
+
+  .heading-div {
+  	order: -1;
+  	position: static;
+  }
+	#heading {
+		font-size: 40px;
+	}
+  #boxes {
+  	position: static;
+  }
+	#boxes .box img {
+		width: 10px;
+		height: 10px;
+	}
+	#showcase img {
+		margin-top: 20px;
+	}
+}
+
+/*----------------------
+showcase div
+-----------------------*/
+
+#showcase{
+	margin-top: 40px;
+	min-height: 400px;
+	text-align: center;
+}
+
+#showcase img {
+	width: 80%;
+	max-height: 750px;
+}
+
+/*----------------------
+playlist div
+
+-----------------------*/
+ #main-vid{
+	min-height: 315px;
+}
+.playlist {
+	margin-top: 80px;
+}
+.playlist iframe {
+	padding-bottom: 10px;
+}
+.playlist h1,h2{
+	text-align: center;
+	margin-bottom: 40px;
+}
+#music-div{
+}
+#music-div iframe {
+	margin-top: 10px;
+}
+
+#video-div iframe {
+	float: left;
+	margin-right: 30px;
+}
+#video-div h2 {
+	margin-top: 40px;
+}
+
+
+
+/*----------------------
+live div
+-----------------------*/
+#live {
+	padding-bottom: 10px;
+}
+
+#live h1, #live p  {
+	text-align: center;
+}
+
+#live div {
+	border-bottom: 1px solid #555;
+}
+
+/*----------------------
+gallery div
+-----------------------*/
+.gallery-div {
+	/* border-bottom: 1px solid #555; */
+	margin-top: 10px;
+	padding-bottom: 40px;
+}
+.gallery-div h1 {
+	text-align: center;
+}
+
+#gallery .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  margin-right: 5px;
+  padding-bottom: 10px;
+}
+#gallery .box img{
+  width: 300px;
+  height: 200px;
+}
+#gallery .box .box-tall {
+	width: 300px;
+	height: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+  #gallery .box{
+    width: 40%;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  #gallery .box {
+    width: 100%;
+  }
+}
+/*----------------------
+subscribe div
+
+
+#subscribe {
+	margin-top: 40px;
+	overflow: hidden;
+}
+#subscribe .subscribe-div {
+	background-color: black;
+	color: white;
+}
+
+#subscribe-h1 {
+}
+#subscribe form {
+	float: right;
+	width: 40%;
+	margin-top: 20px;
+}
+
+#subscribe input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+#subscribe-p {
+	width: 50%;
+	float: left;
+}
+-----------------------*/
+footer {
+	background-color: #090909;
+	padding: 20px;
+	text-align: center;
+	clear: both;
+	font-size: 11px;
+
+}
+/*----------------------
+form div
+-----------------------*/
+.form-container {
+	display: none;
+	position: absolute;
+	top: 0;
+	height: 80%;
+	width: 80%;
+	background-color: #e5e5e5;
+	padding: 20px;
+	margin: auto;
+
+}
+.form-container input[type=text], .form-container input[type=email] {
+		background-color: white;
+		float: center;
+		margin-bottom: 10px;
+		padding: 10px 0;
+		border-radius: 4px;
+		width: 350px;;
+
+
+}
+
+.form-container input[type=submit] {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10px;
+	padding: 5px 0;
+	background-color: #ffd700;
+	border-radius: 6px;
+	width: 350px;
+
+}
+#form-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	border: solid;
+}
