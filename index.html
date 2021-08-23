@@ -1,198 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Sydny Official</title>
-	<link rel="icon" type="image/png" href="images/sydny-favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/sydny.css">
-	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sydny Official</title>
+  <link rel="icon" type="image/png" href="gig/sydny-favicon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="sydny.css">
 </head>
 
-	<body>
+<body id="home">
+  <div class="body">
+    <video id="videoBG" loop muted autoplay poster="poster.png">
+      <source src="Sydny_Sundown.mp4" type="video/mp4">
+    </video>
+    <div class="myContent">
 
-		<div class="dark">
+      <nav class="navbar navbar-expand-sm navbar-light mb-5 fixed-top">
+        <div class="container  ">
+          <a class="navbar-brand" href="#">Sydny</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon btn btn-light"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center navbar-grey rounded" id="navbarNav">
+            <ul class="navbar-nav justify-content-center mx-auto ">
+              <li class=" nav-item mx-5 ">
+                <a class="nav-link text-light" href="#home">Home</a>
+              </li>
+              <li class="nav-item mx-5 ">
+                <a class="nav-link text-light" href="#gallery"></a>
+              </li>
+              <li class="nav-item mx-3 ">
+                <a class="nav-link text-light" href="#gallery">Gallery</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light" href="#">Tracks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contact</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-		<header class="fixed">
-			<div id="top-div">
+      <div class="">
+        <div class="container col-md-6 mt-5 p-5">
+          <br><br>
+          <p class="text-light g-bg-transparent p-5">
+            Sydny is a Nigerian alternative hip-hop artiste and indie music producer. He combines hip-hop and folk
+            elements in his music, with a baritone-voiced poetic lyricism. His unique style and expression appeals to an
+            audience of young millennials who can relate to the regular struggles of his not-so-regular life.
+          </p>
+          <br>
+        </div>
+      </div>
 
-				<div id="update-div">
-					<input type="submit" value="GET UPDATES" class="updates" onclick="openForm()">
+      <section class="container">
+        <div class="mb-5 pb-5 row justify-content-around g-bg-transparent">
 
-				</div>
-
-				<div class="heading-div clearfix">
-					<h1><span id="heading">SYDNY</span></h1> <br>
-				</div>
-				<div id="boxes" class="clearfix">
-					<div id="smallscreen">
-						<div class="box">
-							<a href="https://www.facebook.com/sydnyofficial" target="_blank"><img src="images/fb.png"></a>
-						</div>
-			 			<div class="box">
-							<a href="https://www.instagram.com/sydnyofficial" target="_blank"><img src="images/instagram.png"></a>
-						</div>
-						<div class="box">
-							<a href="https://twitter.com/sydnyofficial" target="_blank"><img src="images/twitter.png"></a>
-						</div>
-						<div class="box">
-							<a href="https://www.youtube.com/channel/UCD7R7QX4HPBCdJTqDCOqZQw" target="_blank"><img src="images/youtube.png"></a>
-						</div>
-						<div class="box">
-							<a href="https://soundcloud.com/sydnyofficial" target="_blank"><img src="images/soundcloud.png"></a>
-						</div>
-						<div class="box">
-							<a href="https://itunes.apple.com/ng/artist/sydny/1064985202" target="_blank"><img src="images/applemusic.png"></a>
-						</div>
-						<div class="box">
-							<a href="https://open.spotify.com/artist/77xkDuMgZ8Egd9ioBw4qu7" target="_blank"><img src="images/spotify.png"></a>
-						</div>
-						<div class="box">
-							<a href="https://www.deezer.com/us/artist/9438788" target="_blank"><img src="images/deezer.png"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-
-		<section id="showcase">
-			<div class="container clearfix">
-				<img src="images/sydny.jpg">
-			</div>
-		</section>
-
-		<section id="music-div">
-			<div class="container playlist">
-				<h1>MUSIC</h1>
-
-				<iframe width="560" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/464684268&color=%23ffd700&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
-			</div>
-		</section>
-
-		<section id="video-div">
-			<div class="container playlist">
-				<h1>VIDEOS</h1>
-				<div class="clearfix">
-					<iframe id="main-vid" width="100%" height="600" src="https://www.youtube.com/embed/225XXTAiUFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-
-				<h2>MORE VIDEOS</h2>
-				<iframe width="300" height="315" src="https://www.youtube.com/embed/bEgqeHkMg4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-				<iframe width="300" height="315" src="https://www.youtube.com/embed/g2iqbLi4hhU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-				<iframe width="300" height="315" src="https://www.youtube.com/embed/4GT-jin1tSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-			</div>
-		</section>
-
-		<section id="live">
-			<div class="container">
-				<h1>LIVE</h1> <br><br>
-					<h3>Dates Venue</h3>
-						<p> No upcoming events or gigs. </p>
-			</div>
-		</section>
+          <!-- video section -->
+          <div class="card col-md-6 bg-transparent text-light">
+            <div class=" card-header">
+              <h4 class="my-0">MY</h4>
+              <h4 class="mt-0">VIDEO</h4>
+              <hr class="bg-warning my-0 underline float-left">
+            </div>
+            <div class="card-body embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="560" src="https://www.youtube.com/embed/WA8vJAqIPMQ"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
 
 
+          <!-- my music section -->
+          <div class="card col-md-4 bg-transparent text-light">
+            <div class="card-header">
+              <h4 class="my-0">MY</h4>
+              <h4 class="mt-0">MUSIC</h4>
+              <hr class="bg-warning my-0 underline float-left">
+            </div>
+            <div class="card-body embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="100%" height="100%" scrolling="no" frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/464684268&color=%2333322e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <div
+                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="https://soundcloud.com/sydnyofficial" title="Sydny" target="_blank"
+                  style="color: #cccccc; text-decoration: none;">Sydny</a> · <a
+                  href="https://soundcloud.com/sydnyofficial/the-train" title="The Train" target="_blank"
+                  style="color: #cccccc; text-decoration: none;">The Train</a></div>
 
-		<section id="gallery">
-			<div class="container gallery-div clearfix">
-				<h1>GALLERY </h1><br>
+            </div>
+          </div>
+        </div>
 
-				<div class="box">
-					<img src="images/gig/syd1.jpg">
-				</div>
-			 	<div class="box">
-					<img src="images/gig/syd2.jpg">
-				</div>
-				<div class="box">
-					<img src="images/gig/syd3.jpg">
-				</div>
-				<div class="box">
-					<img src="images/gig/syd4.jpg">
-				</div>
-				<div class="box">
-					<img src="images/gig/syd5.jpg">
-				</div>
-				<div class="box">
-					<img src="images/gig/syd6.jpg">
-				</div>
-				<div class="box">
-					<img class="box-tall" src="images/gig/syd7.jpg">
-				</div>
-				<div class="box box-tall">
-					<img class="box-tall" src="images/gig/syd8.jpg">
-				</div>
-				<div class="box box-tall">
-					<img class="box-tall" src="images/gig/syd9.jpg">
-				</div>
+      </section>
 
-			</div>
-		</section>
+      <section>
+        <div class="container  g-bg-transparent mb-3 pb-3">
+          <form action="">
+            <div class="form-group col-md-10 mx-auto">
+              <label class="mb-0" for="name">
+                <p class="text-light general-h4 mb-0">Join My Mailing List</p>
+              </label>
+              <input class="form-control form-control-sm mb-2 g-form-input" type="text"
+                placeholder="Enter your email here">
+              <button class="btn btn-block btn-sm btn-light text-mute" type="button">Subscribe Now</button>
+            </div>
+          </form>
+        </div>
+      </section>
 
-		<div class="clearfix"></div>
-<!--
-		<section id="subscribe">
-			<div class="container subscribe-div">
-				<div id="subscribe-p">
-					<p>Want the latest news? <br>
-					Follow and Subscribe to be one of the first to know the latest news on Sydny!</p>
-				</div>
-				<form>
-					<input type="email" placeholder="enter your email">
-					<button type="submit" class="button_1">suscribe</button>
-				</form>
-			</div>
-		</section>
--->
-		<footer>
-			<p> &copy; 2019 Sydny | Site by BettaWeb </p>
-		</footer>
-	</div>
-	<div class="form-container" id="myForm">
-		<div id="form-div">
-			<form id="form-container">
-				<input type="email" name="email" placeholder="enter email..."><br>
-				<input type="submit" value="Submit">
-				<input type="submit" value="Close" class="close" onclick="closeForm">
-			</form>
-		</div>
-	</div>
-	<script>
+      <div id="slider1" class="carousel slide my-5" data-ride="carousel">
+        <div id="gallery">
+          <div class="container my-5 pt-5">
+            <h4 class="mt-3 mb-0 text-center text-light">MY GALLERY</h4>
+            <hr class="bg-warning mt-1 underline">
+            <div class="carousel-inner container col-md-8">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#slider1" data-slide-to="0"></li>
+                <li data-target="#slider1" data-slide-to="1"></li>
+                <li data-target="#slider1" data-slide-to="2"></li>
+                <li data-target="#slider1" data-slide-to="3"></li>
+                <li data-target="#slider1" data-slide-to="4"></li>
+                <li data-target="#slider1" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-item active g-img">
+                <img class="d-block img-fluid mx-auto" width="80%" height="80%" src="gig/syd1.jpg" alt="First Slide">
+              </div>
+              <div class="carousel-item g-img">
+                <img class="d-block img-fluid mx-auto" width="80%" height="80%" src="gig/syd2.jpg" alt="Second Slide">
+              </div>
+              <div class="carousel-item g-img">
+                <img class="d-block img-fluid mx-auto" width="80%" height="80%" src="gig/syd3.jpg" alt="Third Slide">
+              </div>
+              <div class="carousel-item g-img">
+                <img class="d-block img-fluid mx-auto" width="80%" height="80%" src="gig/syd4.jpg" alt="Third Slide">
+              </div>
+              <div class="carousel-item g-img">
+                <img class="d-block img-fluid mx-auto" width="80%" height="80%" src="gig/syd5.jpg" alt="Third Slide">
+              </div>
+              <div class="carousel-item g-img">
+                <img class="d-block img-fluid mx-auto" width="80%" height="80%" src="gig/syd6.jpg" alt="Third Slide">
+              </div>
 
-			window.onscroll = function() {myFunction()};
+              <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
 
-			// Get the header
-			var header = document.getElementById("top-div");
-			var showcase = document.getElementById("showcase");
+              <a href="#slider1" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			// Get the offset position of the navbar
-			var sticky = header.offsetTop;
+      <footer>
+        <div class="g-footer">
+          <div class="container">
+            <!-- <div class="row"> -->
+            <div class="col-md-6 col-sm-8 mx-auto py-4 text-center">
+              <a href="https://www.facebook.com/sydnyofficial" target="_blank"><i
+                  class="fab fa-facebook icons mx-2"></i></a>
+              <a href="https://twitter.com/sydnyofficial" target="_blank"><i class="fab fa-twitter icons mx-2"></i></a>
+              <a href="https://itunes.apple.com/ng/artist/sydny/1064985202" target="_blank"><i
+                  class="fab fa-apple icons mx-2"></i></a>
+              <a href="https://www.instagram.com/sydnyofficial" target="_blank"><i
+                  class="fab fa-instagram icons mx-2"></i></a>
+              <a href="https://soundcloud.com/sydnyofficial" target="_blank"><i
+                  class="fab fa-soundcloud icons mx-2"></i></a>
+              <a href="https://open.spotify.com/artist/77xkDuMgZ8Egd9ioBw4qu7" target="_blank"><i
+                  class="fab fa-spotify icons mx-2"></i></a>
+            </div>
+            <!-- </div> -->
+            <p class="footer-text-font text-light text-center mb-0">&copy;2019-2021 | Site by BettaWeb</p>
+          </div>
+        </div>
+      </footer>
 
-			// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-			function myFunction() {
-			  if (window.pageYOffset > sticky) {
-			    header.classList.add("sticky");
-			  } else {
-			    header.classList.remove("sticky");
-			  }
-			}
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 
+  <script>
+    $('.carousel').carousel({
+      interval: 4000
+    });
 
-			//when the open button is clicked, do this
-			function openForm() {
-			document.getElementById("myForm").style.display = "block";
+  </script>
+</body>
 
-			}
-
-			//when the close button is clicked, do this
-			function closeForm() {
-			document.getElementById("myForm").style.display = "none";
-			}
-
-
-		</script>
-	</body>
 </html>
