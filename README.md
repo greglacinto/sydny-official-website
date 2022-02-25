@@ -9,3 +9,6 @@
 
 ## About
 A simple single-page website to showcase an artist.
+
+[Check the website out] (http://sydnyofficial.com/)
+
