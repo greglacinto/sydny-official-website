@@ -53,6 +53,11 @@ opacity:1!important;
     font-weight: bolder;
 }
 
+#header-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 @media (min-aspect-ratio: 16/9) {
     #videoBG {
         width:100%;
